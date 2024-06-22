@@ -1,5 +1,5 @@
 # shopping
-购物网站
+前端购物网站+layui后台管理系统+node.js后端
 # 运行说明
 1.修改shopping文件夹和admin文件夹下的html文件里面的请求路径，比如原来是这样http://x.x.x.x:3000/api/product/indexcarouselimages 
   把域名修改成你运行环境的域名，本地修改成127.0.0.1，服务器的话修改成服务器的域名或者ip
