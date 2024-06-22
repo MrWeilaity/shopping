@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>添加地址</title>
+		<link rel="icon" href="img/faice.png">
+		<link rel="stylesheet" href="./css/address.css" />
+		<script src="js/v3.2.8/vue.global.prod.js"></script>
+		<link rel="stylesheet" href="./layui/css/layui.css" />
+		<script src="./layui/layui.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<div class="header">
+				<div class="site-mini-header">
+					<div class="container">
+						<div class="header-logo">
+							<a href="" class="logo">
+								<img src="./img/bg.png" alt="" width="48" height="48" />
+							</a>
+						</div>
+						<div class="header-title has-more">
+							<h2>添加地址</h2>
+						</div>
+						<div class="topbar-info" v-if="!users">
+							<a href="./login.html" class="link">登录</a>
+							<span class="sep">|</span>
+							<a href="./enroll.html" class="link">注册</a>
+						</div>
+						<div class="topbar-info" v-if="users">
+							<a href="#" class="link">{{users.account}}</a>
+							<span class="sep">|</span>
+							<a href="./orders.html" class="link">我的订单</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="">
+				<div class="container">
+					<div class="add_input">
+						<input class="dizhi" id="dizhi" type="text" name="" id="" v-model="add">
+						<button class="add_btn" @click="address">添加地址</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="site-footer">
+				<div class="container">
+
+					<div class="footer-service">
+
+						<ul class="list-service">
+							<li>
+								<a href="">
+									<em class="layui-icon layui-icon-util"
+										style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+									预约维修服务
+								</a>
+
+							</li>
+							<li>
+								<a href="">
+									<em class="layui-icon layui-icon-face-smile-b"
+										style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+									7天无理由退货
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<em class="layui-icon layui-icon-face-smile-b"
+										style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+									15天免费换货
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<em class="layui-icon layui-icon-star-fill"
+										style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+									满50包邮
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<em class="layui-icon layui-icon-location"
+										style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+									11100于家售后门店
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-links" style="border-bottom: 1px solid  #e0e0e0;">
+						<dl class="col-links">
+							<dt></dt>
+							<dd></dd>
+						</dl>
+						<dl class="col-links">
+							<dt>了解产品</dt>
+							<dd>手机</dd>
+							<dd>电脑</dd>
+							<dd>平板</dd>
+							<dd>路由器</dd>
+							<dd>耳机</dd>
+							<dd>家电</dd>
+						</dl>
+						<dl class="col-links">
+							<dt>在线购买</dt>
+							<dd>官方商城</dd>
+							<dd>订单查询</dd>
+						</dl>
+						<dl class="col-links">
+							<dt>服务支持</dt>
+							<dd>体验店</dd>
+							<dd>真伪查询</dd>
+							<dd>常见问题</dd>
+							<dd>服务政策</dd>
+						</dl>
+						<dl class="col-links">
+							<dt>商务合作</dt>
+							<dd>供应商协同平台</dd>
+							<dd>开放平台</dd>
+							<dd>企业业务</dd>
+						</dl>
+						<dl class="col-links">
+							<dt>关注我们</dt>
+							<dd>新浪微博</dd>
+							<dd>官方微信</dd>
+							<dd>抖音</dd>
+							<dd>公益基金会</dd>
+						</dl>
+						<div class="col-contact">
+							<div class="col-text">
+								<div>
+									<p>
+										<em class="layui-icon layui-icon-dialogue"
+											style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+										在线客服
+									</p>
+								</div>
+								<div>
+									<p>
+										<em class="layui-icon layui-icon-service"
+											style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+										7*24小时服务热线
+									<p style="padding-left: 30px;font-size: 20px;color: #242933;">400-xxx-9688</p>
+									</p>
+								</div>
+								<div>
+									<p>
+										<em class="layui-icon layui-icon-email"
+											style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+										服务邮箱监督
+									<p style="padding-left: 30px;">151xxxx.@163.com</p>
+									</p>
+								</div>
+								<div>
+									<p>
+										<em class="layui-icon layui-icon-heart-fill"
+											style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+										关注本站
+									<p style="padding-left: 30px;">
+										<em class="layui-icon layui-icon-login-weibo"
+											style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+										<em class="layui-icon layui-icon-login-wechat"
+											style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+										<em class="layui-icon layui-icon-login-qq"
+											style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+
+									</p>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- 页面最底部 -->
+			<footer class="footer-bottom">
+				<div class="container">
+					<p class="vp-foot-copyright">
+						<span style="font-size: 10px;">©2024-2025 云南民族大学应用技术学院23计科一班 版权所有 | 隐私政策 | 用户协议 | 资质主体 | 粤B2-20150324
+							| 粤ICP备14052990号 | 粤公网安备
+							44190002004246号
+						</span>
+						<span style="float: right;font-size: 10px;">
+							Select Location
+							<em class="layui-icon layui-icon-website"></em>
+						</span>
+					</p>
+				</div>
+			</footer>
+
+		</div>
+		<script>
+			layui.use(function() {
+				var layer = layui.layer;
+			})
+			const App = {
+				data() {
+					return {
+						add: "",
+
+						users: ""
+
+					}
+				},
+
+				created() {
+					const storedUser = localStorage.getItem('user');
+					this.users = JSON.parse(storedUser)
+
+				},
+				methods: {
+					address() {
+						let that=this
+						console.log(this.add)
+						if (!this.add) {
+							layer.msg("地址不能为空")
+						}
+						fetch('http://127.0.0.1:3000/api/user/updateuseraddress', {
+								method: 'POST',
+								headers: {
+									'Content-Type': 'application/json'
+								},
+								body: JSON.stringify({
+									account:that.users.account,
+									address:that.add
+								})
+							})
+							.then(response => response.json())
+							.then(data => {
+								console.log('服务器返回:', data);
+								layer.msg("信息修改成功")
+								//修改本地user
+								const usersString = localStorage.getItem('user')
+								const users = JSON.parse(usersString);
+								users.address = that.add;
+								
+								  // 将更新后的用户数据存储回本地存储
+								  localStorage.setItem('user', JSON.stringify(users));
+								setTimeout(function(){
+									window.location.href = './Shopping-cart.html';
+								},1000)
+							})
+							.catch(error => {
+								console.error('上传出错:', error);
+								layer.msg("信息修改失败")
+							});
+					}
+
+				}
+			}
+			Vue.createApp(App).mount('#app');
+		</script>
+	</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>主页一</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../lib/layui-v2.6.3/css/layui.css" media="all">
+    <link rel="stylesheet" href="../lib/font-awesome-4.7.0/css/font-awesome.min.css" media="all">
+    <link rel="stylesheet" href="../css/public.css" media="all">
+</head>
+<style>
+    .layui-top-box {
+        padding: 40px 20px 20px 20px;
+        color: #fff
+    }
+
+    .panel {
+        margin-bottom: 17px;
+        background-color: #fff;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .05)
+    }
+
+    .panel-body {
+        padding: 15px
+    }
+
+    .panel-title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 14px;
+        color: inherit
+    }
+
+    .label {
+        display: inline;
+        padding: .2em .6em .3em;
+        font-size: 75%;
+        font-weight: 700;
+        line-height: 1;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: .25em;
+        margin-top: .3em;
+    }
+
+    .layui-red {
+        color: red
+    }
+
+    .main_btn>p {
+        height: 40px;
+    }
+</style>
+
+<body>
+    <div class="layuimini-container">
+        <div class="layuimini-main layui-top-box">
+            <div style="margin-top: 20px;margin-bottom: 30px;">
+                <h2 style="color: black; text-align: center;">欢迎来到数码购物商城后台管理系统</h2>
+            </div>
+            <div class="layui-row layui-col-space10"
+                style="display: flex;align-items: center; justify-content: center;">
+
+                <div class="layui-col-md3">
+                    <div class="col-xs-6 col-md-3">
+                        <div class="panel layui-bg-cyan">
+                            <div class="panel-body">
+                                <div class="panel-title">
+                                    <span class="label pull-right layui-bg-blue">实时</span>
+                                    <h5>用户统计</h5>
+                                </div>
+                                <div class="panel-content">
+                                    <h1 class="no-margins" id="tex1"></h1>
+                                    <div class="stat-percent font-bold text-gray"><i class="fa fa-commenting"></i> <span id="tex2"></span>
+                                    </div>
+                                    <small>当前分类总记录数</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layui-col-md3">
+                    <div class="col-xs-6 col-md-3">
+                        <div class="panel layui-bg-blue">
+                            <div class="panel-body">
+                                <div class="panel-title">
+                                    <span class="label pull-right layui-bg-cyan">实时</span>
+                                    <h5 >商品统计</h5>
+                                </div>
+                                <div class="panel-content">
+                                    <h1 class="no-margins" id="tex3"></h1>
+                                    <div class="stat-percent font-bold text-gray"><i class="fa fa-commenting"></i> <span id="tex4"></span>
+                                    </div>
+                                    <small>当前分类总记录数</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="layui-col-md3">
+                    <div class="col-xs-6 col-md-3">
+                        <div class="panel layui-bg-orange">
+                            <div class="panel-body">
+                                <div class="panel-title">
+                                    <span class="label pull-right layui-bg-green">实时</span>
+                                    <h5>订单统计</h5>
+                                </div>
+                                <div class="panel-content">
+                                    <h1 class="no-margins" id="tex5"></h1>
+                                    <div class="stat-percent font-bold text-gray"><i class="fa fa-commenting"></i> <span id="tex6"></span>
+                                    </div>
+                                    <small>当前分类总记录数</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="echarts-dataset" style="background-color:#ffffff;min-height:300px;padding: 10px;margin-top: 50px;">
+            </div>
+        </div>
+
+
+    </div>
+    <script src="../lib/layui-v2.6.3/layui.js" charset="utf-8"></script>
+    <script src="../js/lay-config.js?v=1.0.4" charset="utf-8"></script>
+    <script>
+
+        layui.use(['layer', 'echarts'], function () {
+            var $ = layui.jquery,
+                layer = layui.layer,
+                echarts = layui.echarts;
+            var echartsDataset = echarts.init(document.getElementById('echarts-dataset'), 'walden');
+
+
+
+            var optionDataset = {
+                legend: {},
+                tooltip: {},
+                dataset: {
+                    dimensions: ['product', '用户统计', '商品数量', '订单统计'],
+                    source: [
+                        { product: '数码购物商城数据柱状图', '用户统计': 2, '商品数量': 120, '订单统计': 10 },
+
+                    ]
+                },
+                xAxis: { type: 'category' },
+                yAxis: {},
+                series: [
+                    { type: 'bar' },
+                    { type: 'bar' },
+                    { type: 'bar' }
+                ]
+            };
+
+            fetch('http://127.0.0.1:3000/api/user/selectallallallorders')//订单统计
+                .then(response => response.json())
+                .then(data => {
+                    optionDataset.dataset.source[0].订单统计 = data.data.length
+                    document.getElementById("tex5").innerText=data.data.length
+                    document.getElementById("tex6").innerText=data.data.length
+                    echartsDataset.setOption(optionDataset);
+
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+            fetch('http://127.0.0.1:3000/api/user/allusers')//用户统计
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("tex1").innerText=data.data.length
+                    document.getElementById("tex2").innerText=data.data.length
+                    optionDataset.dataset.source[0].用户统计 = data.data.length
+                    echartsDataset.setOption(optionDataset);
+
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+            fetch('http://127.0.0.1:3000/api/product/countrecords')//商品数量
+                .then(response => response.json())
+                .then(data => {
+                    const pro=data.iphone_table+data.flat_table+data.computer_table+data.earphone_table+data.router_table+data.household_table
+                    document.getElementById("tex3").innerText=pro
+                    document.getElementById("tex4").innerText=pro
+                    optionDataset.dataset.source[0].商品数量 = pro
+                    echartsDataset.setOption(optionDataset);
+                    
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+
+            echartsDataset.setOption(optionDataset);
+
+            window.onresize = function () {
+                echartsRecords.resize();
+            }
+
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>订单列表</title>
+		
+		<link rel="icon" href="img/faice.png">
+		<link rel="stylesheet" href="./css/orders.css" />
+		<script src="js/v3.2.8/vue.global.prod.js"></script>
+		<link rel="stylesheet" href="./layui/css/layui.css" />
+		<script src="./layui/layui.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<div class="header">
+				<div class="site-mini-header">
+					<div class="container">
+						<div class="header-logo">
+							<a href="" class="logo">
+								<img src="./img/bg.png" alt="" width="48" height="48" />
+							</a>
+						</div>
+						<div class="header-title has-more">
+							<h2>订单列表</h2>
+						</div>
+						<div class="topbar-info" v-if="!users">
+							<a href="./login.html" class="link">登录</a>
+							<span class="sep">|</span>
+							<a href="./enroll.html" class="link">注册</a>
+						</div>
+						<div class="topbar-info" v-if="users">
+							<a href="#" class="link">{{users.account}}</a>
+							<span class="sep">|</span>
+							<a href="./orders.html" class="link">我的订单</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="orde">
+				<div class="container" style="background-color: #fff;">
+					<div class="orde_head">
+						<p style="width: 500px;">订单编号</p>
+						<p style="width: 500px;">订单时间</p>
+						<p style="width: 226px;">订单金额</p>
+					</div>
+					<div class="order_text" v-for="item in ordes" :key="item.id">
+						<p style="width: 500px;">{{item.order_number}}</p>
+						<p style="width: 500px;">{{showdate(item.order_date)}}</p>
+						<p style="width: 226px;">{{item.order_amount}}.00</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="site-footer">
+				<div class="container">
+
+					<div class="footer-service">
+
+						<ul class="list-service">
+							<li>
+								<a href="">
+									<em class="layui-icon layui-icon-util"
+										style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+									预约维修服务
+								</a>
+
+							</li>
+							<li>
+								<a href="">
+									<em class="layui-icon layui-icon-face-smile-b"
+										style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+									7天无理由退货
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<em class="layui-icon layui-icon-face-smile-b"
+										style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+									15天免费换货
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<em class="layui-icon layui-icon-star-fill"
+										style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+									满50包邮
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<em class="layui-icon layui-icon-location"
+										style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+									11100于家售后门店
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-links" style="border-bottom: 1px solid  #e0e0e0;">
+						<dl class="col-links">
+							<dt></dt>
+							<dd></dd>
+						</dl>
+						<dl class="col-links">
+							<dt>了解产品</dt>
+							<dd>手机</dd>
+							<dd>电脑</dd>
+							<dd>平板</dd>
+							<dd>路由器</dd>
+							<dd>耳机</dd>
+							<dd>家电</dd>
+						</dl>
+						<dl class="col-links">
+							<dt>在线购买</dt>
+							<dd>官方商城</dd>
+							<dd>订单查询</dd>
+						</dl>
+						<dl class="col-links">
+							<dt>服务支持</dt>
+							<dd>体验店</dd>
+							<dd>真伪查询</dd>
+							<dd>常见问题</dd>
+							<dd>服务政策</dd>
+						</dl>
+						<dl class="col-links">
+							<dt>商务合作</dt>
+							<dd>供应商协同平台</dd>
+							<dd>开放平台</dd>
+							<dd>企业业务</dd>
+						</dl>
+						<dl class="col-links">
+							<dt>关注我们</dt>
+							<dd>新浪微博</dd>
+							<dd>官方微信</dd>
+							<dd>抖音</dd>
+							<dd>公益基金会</dd>
+						</dl>
+						<div class="col-contact">
+							<div class="col-text">
+								<div>
+									<p>
+										<em class="layui-icon layui-icon-dialogue"
+											style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+										在线客服
+									</p>
+								</div>
+								<div>
+									<p>
+										<em class="layui-icon layui-icon-service"
+											style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+										7*24小时服务热线
+									<p style="padding-left: 30px;font-size: 20px;color: #242933;">400-xxx-9688</p>
+									</p>
+								</div>
+								<div>
+									<p>
+										<em class="layui-icon layui-icon-email"
+											style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+										服务邮箱监督
+									<p style="padding-left: 30px;">151xxxx.@163.com</p>
+									</p>
+								</div>
+								<div>
+									<p>
+										<em class="layui-icon layui-icon-heart-fill"
+											style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+										关注本站
+									<p style="padding-left: 30px;">
+										<em class="layui-icon layui-icon-login-weibo"
+											style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+										<em class="layui-icon layui-icon-login-wechat"
+											style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+										<em class="layui-icon layui-icon-login-qq"
+											style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+
+									</p>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- 页面最底部 -->
+			<footer class="footer-bottom">
+				<div class="container">
+					<p class="vp-foot-copyright">
+						<span style="font-size: 10px;">©2024-2025 云南民族大学应用技术学院23计科一班 版权所有 | 隐私政策 | 用户协议 | 资质主体 | 粤B2-20150324
+							| 粤ICP备14052990号 | 粤公网安备
+							44190002004246号
+						</span>
+						<span style="float: right;font-size: 10px;">
+							Select Location
+							<em class="layui-icon layui-icon-website"></em>
+						</span>
+					</p>
+				</div>
+			</footer>
+
+		</div>
+		<script>
+			layui.use(function() {
+				var layer = layui.layer;
+			})
+			const App = {
+				data() {
+					return {
+
+						ordes: "",
+						users: ""
+
+					}
+				},
+
+				created() {
+					let that=this
+					const storedUser = localStorage.getItem('user');
+					this.users = JSON.parse(storedUser)
+					that.getOrders(that)
+
+				},
+				methods: {
+					showdate(orderDateString){
+						
+						
+						// 使用 Date 对象解析日期时间字符串
+						const orderDate = new Date(orderDateString);
+						
+						// 提取日期部分（年、月、日）
+						const year = orderDate.getFullYear();
+						const month = orderDate.getMonth() + 1; // 月份是从0开始的，所以需要加1
+						const day = orderDate.getDate();
+						
+						// 提取时间部分（小时、分钟和秒）
+						const hours = orderDate.getHours();
+						const minutes = orderDate.getMinutes();
+						const seconds = orderDate.getSeconds();
+						return `${year}-${month}-${day}     ${hours}:${minutes}:${seconds}`
+						// console.log(`日期部分: ${year}-${month}-${day}`);
+						// console.log(`时间部分: ${hours}:${minutes}:${seconds}`);
+					},
+					getOrders(that) {
+						var xhr = new XMLHttpRequest();
+						xhr.open('GET', 'http://127.0.0.1:3000/api/user/selectallorders?account='+that.users.account, true);
+						xhr.responseType = 'json';
+						xhr.onload = function() {
+							if (xhr.status === 200) {
+								that.ordes = xhr.response.data
+								console.log(that.ordes )
+
+							} else {
+								console.error('请求失败，状态码：' + xhr.status);
+							}
+						};
+						xhr.send();
+					},
+
+				}
+			}
+			Vue.createApp(App).mount('#app');
+		</script>
+	</body>
+</html>

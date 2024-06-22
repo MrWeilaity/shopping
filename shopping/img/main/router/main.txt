@@ -1,0 +1,361 @@
+
+id:4000
+category:router
+Model:X32
+context:【顺丰】锐捷星耀WiFi6路由器X32 PRO千兆家用高速双频5G无线全屋WiFi覆盖mesh电信光纤宽带睿易宿舍穿墙王
+Price:299
+src:./img/main/router/4000-1.webp
+
+id:4000
+category:router
+Model:X32
+context:【顺丰】锐捷星耀WiFi6路由器X32 PRO千兆家用高速双频5G无线全屋WiFi覆盖mesh电信光纤宽带睿易宿舍穿墙王
+Price:299
+src:./img/main/router/4000-2.webp
+
+id:4000
+category:router
+Model:X32
+context:【顺丰】锐捷星耀WiFi6路由器X32 PRO千兆家用高速双频5G无线全屋WiFi覆盖mesh电信光纤宽带睿易宿舍穿墙王
+Price:299
+src:./img/main/router/4000-3.webp
+
+id:4000
+category:router
+Model:X32
+context:【顺丰】锐捷星耀WiFi6路由器X32 PRO千兆家用高速双频5G无线全屋WiFi覆盖mesh电信光纤宽带睿易宿舍穿墙王
+Price:299
+src:./img/main/router/4000-4.webp
+
+id:4000
+category:router
+Model:X32
+context:【顺丰】锐捷星耀WiFi6路由器X32 PRO千兆家用高速双频5G无线全屋WiFi覆盖mesh电信光纤宽带睿易宿舍穿墙王
+Price:299
+src:./img/main/router/4000-5.webp
+
+
+
+id:4001
+category:router
+Model:X60
+context:[新品]Ruijie锐捷天蝎电竞路由器星耀X60 NEW 家用WiFi6千兆AX6000高速穿墙王 2.5G网口宽带聚合 官方旗舰店
+Price:649
+src:./img/main/router/4001-1.webp
+
+id:4001
+category:router
+Model:X60
+context:[新品]Ruijie锐捷天蝎电竞路由器星耀X60 NEW 家用WiFi6千兆AX6000高速穿墙王 2.5G网口宽带聚合 官方旗舰店
+Price:649
+src:./img/main/router/4001-2.webp
+
+id:4001
+category:router
+Model:X60
+context:[新品]Ruijie锐捷天蝎电竞路由器星耀X60 NEW 家用WiFi6千兆AX6000高速穿墙王 2.5G网口宽带聚合 官方旗舰店
+Price:649
+src:./img/main/router/4001-3.webp
+
+id:4001
+category:router
+Model:X60
+context:[新品]Ruijie锐捷天蝎电竞路由器星耀X60 NEW 家用WiFi6千兆AX6000高速穿墙王 2.5G网口宽带聚合 官方旗舰店
+Price:649
+src:./img/main/router/4001-4.webp
+
+id:4001
+category:router
+Model:X60
+context:[新品]Ruijie锐捷天蝎电竞路由器星耀X60 NEW 家用WiFi6千兆AX6000高速穿墙王 2.5G网口宽带聚合 官方旗舰店
+Price:649
+src:./img/main/router/4001-5.webp
+
+
+id:4002
+category:router
+Model:M32
+context:锐捷星耀M32无线路由器WiFi6千兆高速大户型全屋WiFi覆盖mesh组网家用子母套装穿墙王双频5G官方旗舰店
+Price:469
+src:./img/main/router/4002-1.webp
+
+id:4002
+category:router
+Model:M32
+context:锐捷星耀M32无线路由器WiFi6千兆高速大户型全屋WiFi覆盖mesh组网家用子母套装穿墙王双频5G官方旗舰店
+Price:469
+src:./img/main/router/4002-2.webp
+
+id:4002
+category:router
+Model:M32
+context:锐捷星耀M32无线路由器WiFi6千兆高速大户型全屋WiFi覆盖mesh组网家用子母套装穿墙王双频5G官方旗舰店
+Price:469
+src:./img/main/router/4002-3.webp
+
+id:4002
+category:router
+Model:M32
+context:锐捷星耀M32无线路由器WiFi6千兆高速大户型全屋WiFi覆盖mesh组网家用子母套装穿墙王双频5G官方旗舰店
+Price:469
+src:./img/main/router/4002-4.webp
+
+id:4002
+category:router
+Model:M32
+context:锐捷星耀M32无线路由器WiFi6千兆高速大户型全屋WiFi覆盖mesh组网家用子母套装穿墙王双频5G官方旗舰店
+Price:469
+src:./img/main/router/4002-5.webp
+
+
+id:4003
+category:router
+Model:BE3600
+context:TP-LINK WiFi7 BE3600路由器千兆家用高速tplink无线全屋覆盖子母路由穿墙王兼容WiFi6 7DR3610/3630
+Price:246
+src:./img/main/router/4003-1.webp
+
+id:4003
+category:router
+Model:BE3600
+context:TP-LINK WiFi7 BE3600路由器千兆家用高速tplink无线全屋覆盖子母路由穿墙王兼容WiFi6 7DR3610/3630
+Price:246
+src:./img/main/router/4003-2.webp
+
+id:4003
+category:router
+Model:BE3600
+context:TP-LINK WiFi7 BE3600路由器千兆家用高速tplink无线全屋覆盖子母路由穿墙王兼容WiFi6 7DR3610/3630
+Price:246
+src:./img/main/router/4003-3.webp
+
+id:4003
+category:router
+Model:BE3600
+context:TP-LINK WiFi7 BE3600路由器千兆家用高速tplink无线全屋覆盖子母路由穿墙王兼容WiFi6 7DR3610/3630
+Price:246
+src:./img/main/router/4003-4.webp
+
+id:4003
+category:router
+Model:BE3600
+context:TP-LINK WiFi7 BE3600路由器千兆家用高速tplink无线全屋覆盖子母路由穿墙王兼容WiFi6 7DR3610/3630
+Price:246
+src:./img/main/router/4003-5.webp
+
+
+id:4004
+category:router
+Model:BE6500
+context:TP-LINK Wi-Fi7 BE6500路由器 2.5G千兆家用高速tplink无线全屋覆盖子母路由器mesh穿墙 兼容WiFi6 7DR6560
+Price:682
+src:./img/main/router/4004-1.webp
+
+id:4004
+category:router
+Model:BE6500
+context:TP-LINK Wi-Fi7 BE6500路由器 2.5G千兆家用高速tplink无线全屋覆盖子母路由器mesh穿墙 兼容WiFi6 7DR6560
+Price:682
+src:./img/main/router/4004-2.webp
+
+id:4004
+category:router
+Model:BE6500
+context:TP-LINK Wi-Fi7 BE6500路由器 2.5G千兆家用高速tplink无线全屋覆盖子母路由器mesh穿墙 兼容WiFi6 7DR6560
+Price:682
+src:./img/main/router/4004-3.webp
+
+id:4004
+category:router
+Model:BE6500
+context:TP-LINK Wi-Fi7 BE6500路由器 2.5G千兆家用高速tplink无线全屋覆盖子母路由器mesh穿墙 兼容WiFi6 7DR6560
+Price:682
+src:./img/main/router/4004-4.webp
+
+id:4004
+category:router
+Model:BE6500
+context:TP-LINK Wi-Fi7 BE6500路由器 2.5G千兆家用高速tplink无线全屋覆盖子母路由器mesh穿墙 兼容WiFi6 7DR6560
+Price:682
+src:./img/main/router/4004-5.webp
+
+
+id:4005
+category:router
+Model:BE12000
+context:TP-LINK WiFi7 BE13000三频路由器 2.5G千兆家用高速tplink无线mesh全屋覆盖大户型穿墙7TR13090
+Price:2588
+src:./img/main/router/4005-1.webp
+
+id:4005
+category:router
+Model:BE12000
+context:TP-LINK WiFi7 BE13000三频路由器 2.5G千兆家用高速tplink无线mesh全屋覆盖大户型穿墙7TR13090
+Price:2588
+src:./img/main/router/4005-2.webp
+
+id:4005
+category:router
+Model:BE12000
+context:TP-LINK WiFi7 BE13000三频路由器 2.5G千兆家用高速tplink无线mesh全屋覆盖大户型穿墙7TR13090
+Price:2588
+src:./img/main/router/4005-3.webp
+
+id:4005
+category:router
+Model:BE12000
+context:TP-LINK WiFi7 BE13000三频路由器 2.5G千兆家用高速tplink无线mesh全屋覆盖大户型穿墙7TR13090
+Price:2588
+src:./img/main/router/4005-4.webp
+
+id:4005
+category:router
+Model:BE12000
+context:TP-LINK WiFi7 BE13000三频路由器 2.5G千兆家用高速tplink无线mesh全屋覆盖大户型穿墙7TR13090
+Price:2588
+src:./img/main/router/4005-5.webp
+
+
+id:4006
+category:router
+Model:AX5400
+context:TP-LINK WiFi6 AX5400无线路由器千兆高速网络tplink家用mesh大户型全屋覆盖子母路由器穿墙王宿舍5430
+Price:359
+src:./img/main/router/4006-1.webp
+
+id:4006
+category:router
+Model:AX5400
+context:TP-LINK WiFi6 AX5400无线路由器千兆高速网络tplink家用mesh大户型全屋覆盖子母路由器穿墙王宿舍5430
+Price:359
+src:./img/main/router/4006-2.webp
+
+id:4006
+category:router
+Model:AX5400
+context:TP-LINK WiFi6 AX5400无线路由器千兆高速网络tplink家用mesh大户型全屋覆盖子母路由器穿墙王宿舍5430
+Price:359
+src:./img/main/router/4006-3.webp
+
+id:4006
+category:router
+Model:AX5400
+context:TP-LINK WiFi6 AX5400无线路由器千兆高速网络tplink家用mesh大户型全屋覆盖子母路由器穿墙王宿舍5430
+Price:359
+src:./img/main/router/4006-4.webp
+
+id:4006
+category:router
+Model:AX5400
+context:TP-LINK WiFi6 AX5400无线路由器千兆高速网络tplink家用mesh大户型全屋覆盖子母路由器穿墙王宿舍5430
+Price:359
+src:./img/main/router/4006-5.webp
+
+
+id:4007
+category:router
+Model:Redmi AX5400
+context:小米Redmi电竞路由器AX5400 wifi6增强版无线家用5400兆无线速率全平台游戏加速大户型全屋覆盖
+Price:649
+src:./img/main/router/4007-1.webp
+
+id:4007
+category:router
+Model:Redmi AX5400
+context:小米Redmi电竞路由器AX5400 wifi6增强版无线家用5400兆无线速率全平台游戏加速大户型全屋覆盖
+Price:649
+src:./img/main/router/4007-2.webp
+
+id:4007
+category:router
+Model:Redmi AX5400
+context:小米Redmi电竞路由器AX5400 wifi6增强版无线家用5400兆无线速率全平台游戏加速大户型全屋覆盖
+Price:649
+src:./img/main/router/4007-3.webp
+
+id:4007
+category:router
+Model:Redmi AX5400
+context:小米Redmi电竞路由器AX5400 wifi6增强版无线家用5400兆无线速率全平台游戏加速大户型全屋覆盖
+Price:649
+src:./img/main/router/4007-4.webp
+
+id:4007
+category:router
+Model:Redmi AX5400
+context:小米Redmi电竞路由器AX5400 wifi6增强版无线家用5400兆无线速率全平台游戏加速大户型全屋覆盖
+Price:649
+src:./img/main/router/4007-5.webp
+
+
+id:4008
+category:router
+Model:小米 AX6000
+context:小米路由器AX6000 WiFi6路由器家用千兆高速5G双频千兆端口大户型全屋覆盖wifi
+Price:446
+src:./img/main/router/4008-1.png
+
+id:4008
+category:router
+Model:小米 AX6000
+context:小米路由器AX6000 WiFi6路由器家用千兆高速5G双频千兆端口大户型全屋覆盖wifi
+Price:446
+src:./img/main/router/4008-2.webp
+
+id:4008
+category:router
+Model:小米 AX6000
+context:小米路由器AX6000 WiFi6路由器家用千兆高速5G双频千兆端口大户型全屋覆盖wifi
+Price:446
+src:./img/main/router/4008-3.webp
+
+id:4008
+category:router
+Model:小米 AX6000
+context:小米路由器AX6000 WiFi6路由器家用千兆高速5G双频千兆端口大户型全屋覆盖wifi
+Price:446
+src:./img/main/router/4008-4.webp
+
+id:4008
+category:router
+Model:小米 AX6000
+context:小米路由器AX6000 WiFi6路由器家用千兆高速5G双频千兆端口大户型全屋覆盖wifi
+Price:446
+src:./img/main/router/4008-5.webp
+
+
+
+id:4009
+category:router
+Model:G3C BE18000
+context:H3C/新华三BE18000万兆路由器WiFi7家用无线穿墙18000M超高速率16颗信号放大器电竞路由大覆盖
+Price:2299
+src:./img/main/router/4009-1.webp
+
+id:4009
+category:router
+Model:G3C BE18000
+context:H3C/新华三BE18000万兆路由器WiFi7家用无线穿墙18000M超高速率16颗信号放大器电竞路由大覆盖
+Price:2299
+src:./img/main/router/4009-2.webp
+
+id:4009
+category:router
+Model:G3C BE18000
+context:H3C/新华三BE18000万兆路由器WiFi7家用无线穿墙18000M超高速率16颗信号放大器电竞路由大覆盖
+Price:2299
+src:./img/main/router/4009-3.webp
+
+id:4009
+category:router
+Model:G3C BE18000
+context:H3C/新华三BE18000万兆路由器WiFi7家用无线穿墙18000M超高速率16颗信号放大器电竞路由大覆盖
+Price:2299
+src:./img/main/router/4009-4.webp
+
+id:4009
+category:router
+Model:G3C BE18000
+context:H3C/新华三BE18000万兆路由器WiFi7家用无线穿墙18000M超高速率16颗信号放大器电竞路由大覆盖
+Price:2299
+src:./img/main/router/4009-5.webp

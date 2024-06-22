@@ -1,0 +1,215 @@
+{
+  "homeInfo": {
+    "title": "首页",
+    "href": "page/welcome.html?t=1"
+  },
+  "logoInfo": {
+    "title": "数码港湾",
+    "image": "../shopping/img/bg.png",
+    "href": ""
+  },
+  "menuInfo": [
+    {
+      "title": "常规管理",
+      "icon": "fa fa-address-book",
+      "href": "",
+      "target": "_self",
+      "child": [
+        {
+          "title": "用户管理",
+          "href": "page/user.html",
+          "icon": "fa fa-user",
+          "target": "_self"
+        },
+        {
+          "title": "订单管理",
+          "href": "page/orders.html",
+          "icon": "fa fa-file",
+          "target": "_self"
+        },
+        {
+          "title": "轮播图管理",
+          "href": "page/carousel.html",
+          "icon": "fa fa-image",
+          "target": "_self"
+        },
+        {
+          "title": "商品管理",
+          "href": "",
+          "icon": "fa fa-tags",
+          "target": "_self",
+          "child": [
+            {
+              "title": "手机商品",
+              "href": "page/children.html?refig=iphone",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            },
+            {
+              "title": "电脑商品",
+              "href": "page/children.html?refig=computer",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            },
+            {
+              "title": "平板商品",
+              "href": "page/children.html?refig=flat",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            },
+            {
+              "title": "路由器商品",
+              "href": "page/children.html?refig=router",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            },
+            {
+              "title": "耳机商品",
+              "href": "page/children.html?refig=earphone",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            },
+            {
+              "title": "家电商品",
+              "href": "page/children.html?refig=household",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "详情图管理",
+          "href": "",
+          "icon": "fa fa-tags",
+          "target": "_self",
+          "child": [
+            {
+              "title": "手机详情图",
+              "href": "page/list.html?refig=iphone",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            },
+            {
+              "title": "电脑详情图",
+              "href": "page/list.html?refig=computer",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            },
+            {
+              "title": "平板详情图",
+              "href": "page/list.html?refig=flat",
+              "icon": "fa fa-tags",
+              "target": "_self"
+            },
+            {
+              "title": "路由详情图",
+              "href": "page/list.html?refig=router",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            },
+            {
+              "title": "耳机详情图",
+              "href": "page/list.html?refig=earphone",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            },
+            {
+              "title": "家电详情图",
+              "href": "page/list.html?refig=household",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "主图管理",
+          "href": "",
+          "icon": "fa fa-tags",
+          "target": "_self",
+          "child": [
+            {
+              "title": "手机主图",
+              "href": "page/main_image.html?refig=iphone",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            },
+            {
+              "title": "电脑主图",
+              "href": "page/main_image.html?refig=computer",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            },
+            {
+              "title": "平板主图",
+              "href": "page/main_image.html?refig=flat",
+              "icon": "fa fa-tags",
+              "target": "_self"
+            },
+            {
+              "title": "路由主图",
+              "href": "page/main_image.html?refig=router",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            },
+            {
+              "title": "耳机主图",
+              "href": "page/main_image.html?refig=earphone",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            },
+            {
+              "title": "家电主图",
+              "href": "page/main_image.html?refig=household",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "预览框管理",
+          "href": "",
+          "icon": "fa fa-tags",
+          "target": "_self",
+          "child": [
+            {
+              "title": "手机预览",
+              "href": "page/nav.html?nav=iphone",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            },
+            {
+              "title": "电脑预览",
+              "href": "page/nav.html?nav=computer",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            },
+            {
+              "title": "平板预览",
+              "href": "page/nav.html?nav=flat",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            },
+            {
+              "title": "路由器预览",
+              "href": "page/nav.html?nav=router",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            },
+            {
+              "title": "耳机预览",
+              "href": "page/nav.html?nav=earphone",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            },
+            {
+              "title": "家电预览",
+              "href": "page/nav.html?nav=household",
+              "icon": "fa fa-tag",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

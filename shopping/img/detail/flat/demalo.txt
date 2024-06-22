@@ -1,0 +1,406 @@
+id:3000
+category：flat
+Model：HUAWEI MatePad 11.5"S
+context：【新品】HUAWEI MatePad 11.5"S华为平板电脑 144Hz高刷 2.8K护眼屏 办公绘画学习机2024新款官方旗舰店
+Price：2099
+src:./img/detail/flat/3000-1.jpg
+id:3000
+category：flat
+Model：HUAWEI MatePad 11.5"S
+context：【新品】HUAWEI MatePad 11.5"S华为平板电脑 144Hz高刷 2.8K护眼屏 办公绘画学习机2024新款官方旗舰店
+Price：2099
+src:./img/detail/flat/3000-2.jpg
+id:3000
+category：flat
+Model：HUAWEI MatePad 11.5"S
+context：【新品】HUAWEI MatePad 11.5"S华为平板电脑 144Hz高刷 2.8K护眼屏 办公绘画学习机2024新款官方旗舰店
+Price：2099
+src:./img/detail/flat/3000-3.jpg
+id:3000
+category：flat
+Model：HUAWEI MatePad 11.5"S
+context：【新品】HUAWEI MatePad 11.5"S华为平板电脑 144Hz高刷 2.8K护眼屏 办公绘画学习机2024新款官方旗舰店
+Price：2099
+src:./img/detail/flat/3000-4.jpg
+id:3000
+category：flat
+Model：HUAWEI MatePad 11.5"S
+context：【新品】HUAWEI MatePad 11.5"S华为平板电脑 144Hz高刷 2.8K护眼屏 办公绘画学习机2024新款官方旗舰店
+Price：2099
+src:./img/detail/flat/3000-5.jpg
+id:3000
+category：flat
+Model：HUAWEI MatePad 11.5"S
+context：【新品】HUAWEI MatePad 11.5"S华为平板电脑 144Hz高刷 2.8K护眼屏 办公绘画学习机2024新款官方旗舰店
+Price：2099
+src:./img/detail/flat/3000-6.jpg
+
+
+
+id:3001
+category：flat
+Model：HUAWEI MatePad SE10.4
+context：HUAWEI MatePad SE10.4英寸华为平板电脑2023新品护眼屏全面屏学生教育学习机官方旗舰店
+Price：899
+src:./img/detail/flat/3001-1.jpg
+id:3001
+category：flat
+Model：HUAWEI MatePad SE10.4
+context：HUAWEI MatePad SE10.4英寸华为平板电脑2023新品护眼屏全面屏学生教育学习机官方旗舰店
+Price：899
+src:./img/detail/flat/3001-2.jpg
+id:3001
+category：flat
+Model：HUAWEI MatePad SE10.4
+context：HUAWEI MatePad SE10.4英寸华为平板电脑2023新品护眼屏全面屏学生教育学习机官方旗舰店
+Price：899
+src:./img/detail/flat/3001-3.jpg
+id:3001
+category：flat
+Model：HUAWEI MatePad SE10.4
+context：HUAWEI MatePad SE10.4英寸华为平板电脑2023新品护眼屏全面屏学生教育学习机官方旗舰店
+Price：899
+src:./img/detail/flat/3001-4.jpg
+id:3001
+category：flat
+Model：HUAWEI MatePad SE10.4
+context：HUAWEI MatePad SE10.4英寸华为平板电脑2023新品护眼屏全面屏学生教育学习机官方旗舰店
+Price：899
+src:./img/detail/flat/3001-5.jpg
+id:3001
+category：flat
+Model：HUAWEI MatePad SE10.4
+context：HUAWEI MatePad SE10.4英寸华为平板电脑2023新品护眼屏全面屏学生教育学习机官方旗舰店
+Price：899
+src:./img/detail/flat/3001-6.jpg
+
+
+id:3002
+category：flat
+Model：HUAWEI MatePad 2023
+context：HUAWEI MatePad 2023款华为平板电脑护眼屏11.5英寸大尺寸大学生学习教育官方旗舰店
+Price：1799
+src:./img/detail/flat/3002-1.jpg
+id:3002
+category：flat
+Model：HUAWEI MatePad 2023
+context：HUAWEI MatePad 2023款华为平板电脑护眼屏11.5英寸大尺寸大学生学习教育官方旗舰店
+Price：1799
+src:./img/detail/flat/3002-2.jpg
+id:3002
+category：flat
+Model：HUAWEI MatePad 2023
+context：HUAWEI MatePad 2023款华为平板电脑护眼屏11.5英寸大尺寸大学生学习教育官方旗舰店
+Price：1799
+src:./img/detail/flat/3002-3.jpg
+id:3002
+category：flat
+Model：HUAWEI MatePad 2023
+context：HUAWEI MatePad 2023款华为平板电脑护眼屏11.5英寸大尺寸大学生学习教育官方旗舰店
+Price：1799
+src:./img/detail/flat/3002-4.jpg
+id:3002
+category：flat
+Model：HUAWEI MatePad 2023
+context：HUAWEI MatePad 2023款华为平板电脑护眼屏11.5英寸大尺寸大学生学习教育官方旗舰店
+Price：1799
+src:./img/detail/flat/3002-5.jpg
+id:3002
+category：flat
+Model：HUAWEI MatePad 2023
+context：HUAWEI MatePad 2023款华为平板电脑护眼屏11.5英寸大尺寸大学生学习教育官方旗舰店
+Price：1799
+src:./img/detail/flat/3002-6.jpg
+
+
+
+id:3003
+category：flat
+Model：HUAWEI MatePad Pro11
+context：HUAWEI MatePad Pro11英寸2024款华为平板电脑 OLED2.5K全面屏 星闪连接PC级页面布局全面屏学习绘画学生办公
+Price：3699
+src:./img/detail/flat/3003-1.jpg
+id:3003
+category：flat
+Model：HUAWEI MatePad Pro11
+context：HUAWEI MatePad Pro11英寸2024款华为平板电脑 OLED2.5K全面屏 星闪连接PC级页面布局全面屏学习绘画学生办公
+Price：3699
+src:./img/detail/flat/3003-2.jpg
+id:3003
+category：flat
+Model：HUAWEI MatePad Pro11
+context：HUAWEI MatePad Pro11英寸2024款华为平板电脑 OLED2.5K全面屏 星闪连接PC级页面布局全面屏学习绘画学生办公
+Price：3699
+src:./img/detail/flat/3003-3.jpg
+id:3003
+category：flat
+Model：HUAWEI MatePad Pro11
+context：HUAWEI MatePad Pro11英寸2024款华为平板电脑 OLED2.5K全面屏 星闪连接PC级页面布局全面屏学习绘画学生办公
+Price：3699
+src:./img/detail/flat/3003-4.jpg
+id:3003
+category：flat
+Model：HUAWEI MatePad Pro11
+context：HUAWEI MatePad Pro11英寸2024款华为平板电脑 OLED2.5K全面屏 星闪连接PC级页面布局全面屏学习绘画学生办公
+Price：3699
+src:./img/detail/flat/3003-5.jpg
+id:3003
+category：flat
+Model：HUAWEI MatePad Pro11
+context：HUAWEI MatePad Pro11英寸2024款华为平板电脑 OLED2.5K全面屏 星闪连接PC级页面布局全面屏学习绘画学生办公
+Price：3699
+src:./img/detail/flat/3003-6.jpg
+
+
+
+id:3004
+category:flat
+Model:HUAWEI MateBook E 2023
+context:HUAWEI MateBook E 2023华为平板电脑二合一笔记本电脑新款办公学习全能商务本官方旗舰店
+Price:6299
+src:./img/detail/flat/3004-1.jpg
+
+id:3004
+category:flat
+Model:HUAWEI MateBook E 2023
+context:HUAWEI MateBook E 2023华为平板电脑二合一笔记本电脑新款办公学习全能商务本官方旗舰店
+Price:6299
+src:./img/detail/flat/3004-2.jpg
+
+id:3004
+category:flat
+Model:HUAWEI MateBook E 2023
+context:HUAWEI MateBook E 2023华为平板电脑二合一笔记本电脑新款办公学习全能商务本官方旗舰店
+Price:6299
+src:./img/detail/flat/3004-3.jpg
+
+id:3004
+category:flat
+Model:HUAWEI MateBook E 2023
+context:HUAWEI MateBook E 2023华为平板电脑二合一笔记本电脑新款办公学习全能商务本官方旗舰店
+Price:6299
+src:./img/detail/flat/3004-4.jpg
+
+id:3004
+category:flat
+Model:HUAWEI MateBook E 2023
+context:HUAWEI MateBook E 2023华为平板电脑二合一笔记本电脑新款办公学习全能商务本官方旗舰店
+Price:6299
+src:./img/detail/flat/3004-5.jpg
+
+id:3004
+category:flat
+Model:HUAWEI MateBook E 2023
+context:HUAWEI MateBook E 2023华为平板电脑二合一笔记本电脑新款办公学习全能商务本官方旗舰店
+Price:6299
+src:./img/detail/flat/3004-6.jpg
+
+
+
+id:3005
+category:flat
+Model:Apple
+context:Apple/苹果 10.9 英寸 iPad 无线局域网机型
+Price:2999
+src:./img/detail/flat/3005-1.jpg
+
+id:3005
+category:flat
+Model:Apple
+context:Apple/苹果 10.9 英寸 iPad 无线局域网机型
+Price:2999
+src:./img/detail/flat/3005-2.jpg
+
+id:3005
+category:flat
+Model:Apple
+context:Apple/苹果 10.9 英寸 iPad 无线局域网机型
+Price:2999
+src:./img/detail/flat/3005-3.jpg
+
+id:3005
+category:flat
+Model:Apple
+context:Apple/苹果 10.9 英寸 iPad 无线局域网机型
+Price:2999
+src:./img/detail/flat/3005-4.jpg
+
+id:3005
+category:flat
+Model:Apple
+context:Apple/苹果 10.9 英寸 iPad 无线局域网机型
+Price:2999
+src:./img/detail/flat/3005-5.jpg
+
+id:3005
+category:flat
+Model:Apple
+context:Apple/苹果 10.9 英寸 iPad 无线局域网机型
+Price:2999
+src:./img/detail/flat/3005-6.jpg
+
+
+id:3006
+category:flat
+Model:Apple
+context:Apple/苹果 11 英寸 iPad Air
+Price:4799
+src:./img/detail/flat/3006-1.jpg
+
+id:3006
+category:flat
+Model:Apple
+context:Apple/苹果 11 英寸 iPad Air
+Price:4799
+src:./img/detail/flat/3006-2.jpg
+
+id:3006
+category:flat
+Model:Apple
+context:Apple/苹果 11 英寸 iPad Air
+Price:4799
+src:./img/detail/flat/3006-3.jpg
+
+id:3006
+category:flat
+Model:Apple
+context:Apple/苹果 11 英寸 iPad Air
+Price:4799
+src:./img/detail/flat/3006-4.jpg
+
+id:3006
+category:flat
+Model:Apple
+context:Apple/苹果 11 英寸 iPad Air
+Price:4799
+src:./img/detail/flat/3006-5.jpg
+
+id:3006
+category:flat
+Model:Apple
+context:Apple/苹果 11 英寸 iPad Air
+Price:4799
+src:./img/detail/flat/3006-6.jpg
+
+
+id:3007
+category:flat
+Model:Apple
+context:Apple/苹果 13 英寸 iPad Air
+Price:6499
+src:./img/detail/flat/3007-1.jpg
+
+id:3007
+category:flat
+Model:Apple
+context:Apple/苹果 13 英寸 iPad Air
+Price:6499
+src:./img/detail/flat/3007-2.jpg
+
+id:3007
+category:flat
+Model:Apple
+context:Apple/苹果 13 英寸 iPad Air
+Price:6499
+src:./img/detail/flat/3007-3.jpg
+
+id:3007
+category:flat
+Model:Apple
+context:Apple/苹果 13 英寸 iPad Air
+Price:6499
+src:./img/detail/flat/3007-4.jpg
+
+id:3007
+category:flat
+Model:Apple
+context:Apple/苹果 13 英寸 iPad Air
+Price:6499
+src:./img/detail/flat/3007-5.jpg
+
+id:3007
+category:flat
+Model:Apple
+context:Apple/苹果 13 英寸 iPad Air
+Price:6499
+src:./img/detail/flat/3007-6.jpg
+
+
+
+id:3008
+category:flat
+Model:iPad mini
+context:Apple/苹果 iPad mini 无线局域网机型
+Price:3999
+src:./img/detail/flat/3008-1.jpg
+
+id:3008
+category:flat
+Model:iPad mini
+context:Apple/苹果 iPad mini 无线局域网机型
+Price:3999
+src:./img/detail/flat/3008-2.jpg
+
+id:3008
+category:flat
+Model:iPad mini
+context:Apple/苹果 iPad mini 无线局域网机型
+Price:3999
+src:./img/detail/flat/3008-3.jpg
+
+id:3008
+category:flat
+Model:iPad mini
+context:Apple/苹果 iPad mini 无线局域网机型
+Price:3999
+src:./img/detail/flat/3008-4.jpg
+
+id:3008
+category:flat
+Model:iPad mini
+context:Apple/苹果 iPad mini 无线局域网机型
+Price:3999
+src:./img/detail/flat/3008-5.jpg
+
+
+id:3009
+category:flat
+Model:iPad Pro
+context:Apple/苹果 11 英寸 iPad Pro - 纳米纹理玻璃面板
+Price:14899
+src:./img/detail/flat/3009-1.jpg
+
+id:3009
+category:flat
+Model:iPad Pro
+context:Apple/苹果 11 英寸 iPad Pro - 纳米纹理玻璃面板
+Price:14899
+src:./img/detail/flat/3009-2.jpg
+
+id:3009
+category:flat
+Model:iPad Pro
+context:Apple/苹果 11 英寸 iPad Pro - 纳米纹理玻璃面板
+Price:14899
+src:./img/detail/flat/3009-3.jpg
+
+id:3009
+category:flat
+Model:iPad Pro
+context:Apple/苹果 11 英寸 iPad Pro - 纳米纹理玻璃面板
+Price:14899
+src:./img/detail/flat/3009-4.jpg
+
+id:3009
+category:flat
+Model:iPad Pro
+context:Apple/苹果 11 英寸 iPad Pro - 纳米纹理玻璃面板
+Price:14899
+src:./img/detail/flat/3009-5.jpg
+
+id:3009
+category:flat
+Model:iPad Pro
+context:Apple/苹果 11 英寸 iPad Pro - 纳米纹理玻璃面板
+Price:14899
+src:./img/detail/flat/3009-6.jpg

@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>数码港湾</title>
+		<link rel="icon" href="img/faice.png">
+		<!-- <script src="https://unpkg.com/vue@next"></script> -->
+		<script src="js/v3.2.8/vue.global.prod.js" type="text/javascript" charset="utf-8"></script>
+		<script src="layui/layui.js"></script>
+		<link rel="stylesheet" href="./layui/css/layui.css" />
+		<link rel="stylesheet" href="./css/list.css" />
+		<style>
+			.site-products {
+				display: flex;
+				justify-content: center;
+			}
+
+			.chanping,
+			.gouwuche {
+				width: 613px;
+			}
+
+			.gouwuche {
+				padding-left: 100px;
+			}
+
+			.home-hero {
+				padding: 50px 25px;
+			}
+
+			.btn {
+				display: block;
+				margin-top: 60px;
+				text-align: center;
+				width: 298px;
+				height: 52px;
+				line-height: 52px;
+				background-color: #ff6700;
+				color: #e0e0e0;
+				border: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<!-- 导航 -->
+			<div class="header">
+				<!-- 导航top -->
+				<div class="site-topbar">
+					<div class="container">
+						<div class="layui-row">
+							<div class="layui-col-xs8 topbar-nav">
+								<a href="./index.html">商城主页</a>
+								<span class="sep">|</span>
+								<a href="">售后服务</a>
+								<span class="sep">|</span>
+								<a href="">加入我们</a>
+								<span class="sep">|</span>
+								<a href="">联系客服</a>
+								<span class="sep">|</span>
+								<a href="">管理员</a>
+							</div>
+							<div class="layui-col-xs4">
+								<div class="layui-row">
+									<div class="layui-col-xs6 topbar-info" v-if="!users">
+										<a href="./login.html">登录</a>
+										<span class="sep">|</span>
+										<a href="./enroll.html">注册</a>
+										<span class="sep">|</span>
+										<a href="#">我的订单</a>
+									</div>
+									<div class="layui-col-xs6 topbar-info" v-if="users">
+										<a href="#">{{users.account}}</a>
+										<span class="sep">|</span>
+										<a href="./orders.html">我的订单</a>
+										<span class="sep">|</span>
+										<a href="#" @click="deletUser">退出登录</a>
+									</div>
+									<div class="layui-col-xs6 topbar-cart">
+										<a href="./Shopping-cart.html" class="cart-mini">
+											<em class="layui-icon layui-icon-cart"></em>
+											购物车
+
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 导航header -->
+				<div class="site-header">
+					<div class="container">
+						<div class="btoom">
+							<div class="header-logo">
+								<div class="logo">
+									<img src="./img/bg.png" alt="" width="60" height="60" />
+								</div>
+							</div>
+							<div class="header-nav">
+								<ul class="nav-list" @mouseout="yichu">
+									<li class="nav-item"><a href="./chider.html?refig=iphone" class="link"
+											@mouseover="yiru('iphone')"><span>手机</span></a></li>
+									<li class="nav-item"><a href="./chider.html?refig=computer" class="link"
+											@mouseover="yiru('Computer')"><span>电脑</span></a>
+									</li>
+									<li class="nav-item"><a href="./chider.html?refig=flat" class="link"
+											@mouseover="yiru('flat')"><span>平板</span></a></li>
+									<li class="nav-item"><a href="./chider.html?refig=router" class="link"
+											@mouseover="yiru('router')"><span>路由器</span></a>
+									</li>
+									<li class="nav-item"><a href="./chider.html?refig=household" class="link"
+											@mouseover="yiru('household')"><span>家电</span></a>
+									</li>
+									<li class="nav-item"><a href="./chider.html?refig=earphone" class="link"
+											@mouseover="yiru('earphone')"><span>耳机</span></a>
+									</li>
+								</ul>
+							</div>
+							<div class="search">
+								<div class="serch-in">
+									<input type="text" name="" id="" @focus="infocus('focused')"
+										@blur="infocus('normal')">
+								</div>
+								<div class="search-em">
+									<em class="layui-icon layui-icon-search normal" id="search-icon-em"></em>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 预览框 -->
+					<div class="header-nav-menu" style="display: block;">
+						<div class="container">
+							<ul class="children-list">
+								<li class="list-image" v-for="item in navsrcs">
+									<img :src="item.src" alt="" style="width: 160px;height: 110px;"/>
+									<div>{{item.text}}</div>
+									<p>{{item.Price}}元</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<!-- 产品加入购物车 -->
+			<div class="products">
+				<div class="container site-products">
+					<!-- 产品 -->
+					<div class="chanping">
+						<div class="home-hero">
+							<div class="container">
+								<div class="layui-carousel" id="test1">
+									<div carousel-item id="carousel">
+
+										<!-- <div v-for="item in Carousel">
+											<img :src="item.detail_src" alt="" style="width: 560px;height: 560px;" />
+										</div> -->
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- 购物车 -->
+					<div class="gouwuche">
+						<h2 style="margin-top: 60px;font-size: 36px;">{{Information.Model}}</h2>
+						<p style="margin-top: 30px;margin-bottom: 20px;">{{Information.context}}</p>
+						<hr style="border: 1px solid #e0e0e0;" />
+						<div style="margin: 50px 0;">
+							<em class="layui-icon layui-icon-rmb" style="font-size: 30px;color: #ff6700;"></em>
+							<span
+								style="font-size: 40px;color: #ff6700;line-height: 38px;margin-left: 10px;">{{Information.Price}}.00</span>
+						</div>
+						<hr style="border: 1px solid #e0e0e0;" />
+						<p style="margin: 20px 0;">
+							商品支持：<span style="margin-left: 30px;"></span>
+							<em class="layui-icon layui-icon-ok-circle"
+								style="font-size: 14px;color: #ff6700;"></em>花呗分期&nbsp;&nbsp;
+							<em class="layui-icon layui-icon-ok-circle"
+								style="font-size: 14px;color: #ff6700;"></em>以旧换新 &nbsp;&nbsp;
+							<em class="layui-icon layui-icon-ok-circle"
+								style="font-size: 14px;color: #ff6700;"></em>积分抵现
+						</p>
+						<em class="layui-icon layui-icon-subtraction"
+							style="font-size: 30px;background-color: #ff6700;color: #fff;" @click="counter--"></em>
+
+						<span style="font-size: 26px;line-height: 30px;margin: 0 10px;">{{counter}}</span>
+						<em class="layui-icon layui-icon-addition"
+							style="font-size: 30px;background-color: #ff6700;color: #fff;" @click="counter++"></em>
+						<button type="button" class="btn" @click="gouwuchejiajia">加入购物车</button>
+						<!-- 还需要写加入购物车逻辑 -->
+					</div>
+				</div>
+			</div>
+
+
+			<!-- 详情页 -->
+			<div class="detail">
+				<div class="container">
+					<div class="diagram" v-for="item in Detail_diagram" :key="item.id">
+						<img :src="item.detail_src" alt="" style="width: 100%;" />
+					</div>
+				</div>
+			</div>
+
+
+			<!-- footer -->
+			<div class="site-footer">
+				<div class="container">
+
+					<div class="footer-service">
+
+						<ul class="list-service">
+							<li>
+								<a href="">
+									<em class="layui-icon layui-icon-util"
+										style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+									预约维修服务
+								</a>
+
+							</li>
+							<li>
+								<a href="">
+									<em class="layui-icon layui-icon-face-smile-b"
+										style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+									7天无理由退货
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<em class="layui-icon layui-icon-face-smile-b"
+										style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+									15天免费换货
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<em class="layui-icon layui-icon-star-fill"
+										style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+									满50包邮
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<em class="layui-icon layui-icon-location"
+										style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+									11100于家售后门店
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-links" style="border-bottom: 1px solid  #e0e0e0;">
+						<dl class="col-links">
+							<dt></dt>
+							<dd></dd>
+						</dl>
+						<dl class="col-links">
+							<dt>了解产品</dt>
+							<dd>手机</dd>
+							<dd>电脑</dd>
+							<dd>平板</dd>
+							<dd>路由器</dd>
+							<dd>耳机</dd>
+							<dd>家电</dd>
+						</dl>
+						<dl class="col-links">
+							<dt>在线购买</dt>
+							<dd>官方商城</dd>
+							<dd>订单查询</dd>
+						</dl>
+						<dl class="col-links">
+							<dt>服务支持</dt>
+							<dd>体验店</dd>
+							<dd>真伪查询</dd>
+							<dd>常见问题</dd>
+							<dd>服务政策</dd>
+						</dl>
+						<dl class="col-links">
+							<dt>商务合作</dt>
+							<dd>供应商协同平台</dd>
+							<dd>开放平台</dd>
+							<dd>企业业务</dd>
+						</dl>
+						<dl class="col-links">
+							<dt>关注我们</dt>
+							<dd>新浪微博</dd>
+							<dd>官方微信</dd>
+							<dd>抖音</dd>
+							<dd>公益基金会</dd>
+						</dl>
+						<div class="col-contact">
+							<div class="col-text">
+								<div>
+									<p>
+										<em class="layui-icon layui-icon-dialogue"
+											style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+										在线客服
+									</p>
+								</div>
+								<div>
+									<p>
+										<em class="layui-icon layui-icon-service"
+											style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+										7*24小时服务热线
+									<p style="padding-left: 30px;font-size: 20px;color: #242933;">400-xxx-9688</p>
+									</p>
+								</div>
+								<div>
+									<p>
+										<em class="layui-icon layui-icon-email"
+											style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+										服务邮箱监督
+									<p style="padding-left: 30px;">151xxxx.@163.com</p>
+									</p>
+								</div>
+								<div>
+									<p>
+										<em class="layui-icon layui-icon-heart-fill"
+											style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+										关注本站
+									<p style="padding-left: 30px;">
+										<em class="layui-icon layui-icon-login-weibo"
+											style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+										<em class="layui-icon layui-icon-login-wechat"
+											style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+										<em class="layui-icon layui-icon-login-qq"
+											style="margin-right: 6px;font-size: 24px;line-height: 24px;vertical-align: -4px;"></em>
+
+									</p>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- 页面最底部 -->
+			<footer class="footer-bottom">
+				<div class="container">
+					<p class="vp-foot-copyright">
+						<span style="font-size: 10px;">©2024-2025 云南民族大学应用技术学院23计科一班 版权所有 | 隐私政策 | 用户协议 | 资质主体 | 粤B2-20150324
+							| 粤ICP备14052990号 | 粤公网安备
+							44190002004246号
+						</span>
+						<span style="float: right;font-size: 10px;">
+							Select Location
+							<em class="layui-icon layui-icon-website"></em>
+						</span>
+					</p>
+				</div>
+			</footer>
+
+
+			<ul class="bar">
+				<li class="bar-list">
+					<a href="">
+						<em class="layui-icon layui-icon-cellphone"></em>
+						<br />
+						<span>手机APP</span>
+					</a>
+				</li>
+				<li class="bar-list">
+					<a href="">
+						<em class="layui-icon layui-icon-username"></em>
+						<br />
+						<span>个人中心</span>
+					</a>
+				</li>
+				<li class="bar-list">
+					<a href="">
+						<em class="layui-icon layui-icon-util"></em>
+						<br />
+						<span>售后服务</span>
+					</a>
+				</li>
+				<li class="bar-list">
+					<a href="">
+						<em class="layui-icon layui-icon-service"></em>
+						<br />
+						<span>人工客服</span>
+					</a>
+				</li>
+				<li class="bar-list">
+					<a href="./Shopping-cart.html">
+						<em class="layui-icon layui-icon-cart"></em>
+						<br />
+						<span>购物车</span>
+					</a>
+				</li>
+				<li class="bar-list" style="margin-top: 5px;" v-show="showscroll">
+					<a href="">
+						<em class="layui-icon layui-icon-up"></em>
+						<br />
+						<span>返回顶部</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script>
+			function isgetcan() { //解析浏览器url字符串
+				let search = window.location.search;
+				var params = {};
+				var pairs = search.slice(1).split('&');
+				for (var i = 0; i < pairs.length; i++) {
+					var pair = pairs[i].split('=');
+					params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+				}
+				return params;
+			}
+			const url1 = "http://127.0.0.1:3000/api/product/individualproducts?refig=" + isgetcan()
+				.refig + "&id=" + isgetcan().id
+			layui.use(['carousel', 'jquery'], function() {
+			
+				var carousel = layui.carousel;
+				var $ = layui.jquery;
+				//图片渲染
+				$.ajax({
+					url: url1,
+					success: function(res) {
+						var carouselList = res.data;
+						//清空轮播图(此处可以省略)
+						$("#carousel").empty();
+						for (var i = 0; i < carouselList.length; i++) {
+							var item = carouselList[i];
+							//src 为你的图片地址
+							$("#carousel").append(
+								`<div><img src="${item.detail_src}" alt="" style="width: 560px;height: 560px;"/></div>`
+							)
+						}
+						//=====================这里需要注意
+						//先把图片append进去，再渲染轮播
+						carousel.render({
+							elem: '#test1',
+							width: '560px', //设置容器宽度
+							height: '560px',
+							arrow: 'always', //始终显示箭头
+							interval: 3000,
+							anim: 'fade'
+						});
+					}
+				})
+			})	
+				
+				
+				
+			// layui.use('carousel', function() {
+			// 	var carousel = layui.carousel;
+			// 	var layer = layui.layer;
+			// 	//建造实例
+			// 	carousel.render({
+			// 		elem: '#test1',
+			// 		width: '560px', //设置容器宽度
+			// 		height: '560px',
+			// 		arrow: 'always', //始终显示箭头
+			// 		anim: 'fade' //切换动画方式
+			// 	});
+			// });
+			const App = {
+				data() {
+					return {
+						counter: 1, //购物车++ --
+
+						showscroll: false,
+						imgsrcs: "", //预览图所有json
+						navsrcs: "", //当前移入的类型json
+						// Carousel: {}, //单个商品轮播图
+						Information: '', //单个商品基本信息
+						Detail_diagram: {}, //单个商品详情图
+						users: "", //用户信息
+
+
+
+					}
+				},
+				created() {
+
+
+					const storedUser = localStorage.getItem('user');
+					this.users = JSON.parse(storedUser)
+					let that = this
+					this.resjson(that);
+
+					// const url1 = "http://127.0.0.1:3000/api/product/individualproducts?refig=" + that.getQueryParams()
+					// 	.refig + "&id=" + that.getQueryParams().id
+					// this.getshowCarousel(url1, that)
+					const url2 = "http://127.0.0.1:3000/api/product/Information?refig=" + that.getQueryParams().refig +
+						"&id=" + that.getQueryParams().id
+					this.getshowInformation(url2, that)
+					const url3 = "http://127.0.0.1:3000/api/product/detaildiagram?refig=" + that.getQueryParams().refig +
+						"&id=" + that.getQueryParams().id
+					this.getshowDetaildiagram(url3, that)
+				},
+				methods: {
+					deletUser() {
+						console.log(123)
+						// 清空本地存储中的users
+						localStorage.removeItem('user');
+
+						// 刷新页面
+						window.location.reload();
+
+					},
+					gouwuchejiajia() {
+						if (!localStorage.getItem('user')) {
+							console.log("请先登录")
+							layer.msg('请先登录');
+							return false
+						}
+						//执行添加购物车逻辑 价格 图片 数量 名字 加入购物车之后counter要赋值为1
+						if (this.counter < 1) {
+							layer.msg('请正确选择数量');
+							return false
+						}
+
+						const storedUser = JSON.parse(localStorage.getItem('user'));
+						const newProduct = {
+							id: this.Information.id,
+							account_id: storedUser.account,
+							Model: this.Information.Model,
+							src: this.Information.src,
+							Price: this.Information.Price,
+							quantity: this.counter
+						}
+						const jsonPayload = JSON.stringify(newProduct);
+						fetch('http://127.0.0.1:3000/api/product/charugouquche', {
+								method: 'POST',
+								headers: {
+									'Content-Type': 'application/json'
+								},
+								body: jsonPayload
+							})
+							.then(response => {
+								if (!response.ok) {
+									throw new Error('Network response was not ok');
+								}
+								console.log(response.ok)
+								return response.json();
+							})
+							.then(data => {
+								console.log('Success:', data)
+								layer.msg("加入成功")
+							})
+							.catch((error) => {
+								console.error('Error:', error)
+								layer.msg("加入失败")
+							});
+						this.counter = 1
+					},
+					getshowDetaildiagram(url, that) {
+						var xhr = new XMLHttpRequest();
+						xhr.open('GET', url, true);
+						xhr.responseType = 'json';
+						xhr.onload = function() {
+							if (xhr.status === 200) {
+								// console.log(xhr.response.data)
+
+								that.Detail_diagram = xhr.response.data
+								console.log(that.Detail_diagram)
+							} else {
+								console.error('请求失败，状态码：' + xhr.status);
+							}
+						};
+						xhr.send();
+					},
+					getshowInformation(url, that) {
+						var xhr = new XMLHttpRequest();
+						xhr.open('GET', url, true);
+						xhr.responseType = 'json';
+						xhr.onload = function() {
+							if (xhr.status === 200) {
+								// console.log(xhr.response.data)
+
+								that.Information = xhr.response.data[0]
+								// console.log(that.Information)
+							} else {
+								console.error('请求失败，状态码：' + xhr.status);
+							}
+						};
+						xhr.send();
+					},
+					// getshowCarousel(url, that) {
+					// 	var xhr = new XMLHttpRequest();
+					// 	xhr.open('GET', url, true);
+					// 	xhr.responseType = 'json';
+					// 	xhr.onload = function() {
+					// 		if (xhr.status === 200) {
+
+					// 			that.Carousel = xhr.response.data
+					// 		} else {
+					// 			console.error('请求失败，状态码：' + xhr.status);
+					// 		}
+					// 	};
+					// 	xhr.send();
+					// },
+					getQueryParams() { //解析浏览器url字符串
+						let search = window.location.search;
+						var params = {};
+						var pairs = search.slice(1).split('&');
+						for (var i = 0; i < pairs.length; i++) {
+							var pair = pairs[i].split('=');
+							params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+						}
+						return params;
+					},
+					resjson(that) {
+						var xhr = new XMLHttpRequest();
+						xhr.open('GET', 'http://127.0.0.1:3000/api/product/nav', true);
+						xhr.responseType = 'json';
+						xhr.onload = function() {
+							if (xhr.status === 200) {
+								that.imgsrcs = xhr.response.data
+
+							} else {
+								console.error('请求失败，状态码：' + xhr.status);
+							}
+						};
+						xhr.send();
+
+					},
+					infocus(classname) {
+						document.getElementById("search-icon-em").className = classname + " layui-icon layui-icon-search "
+
+
+					},
+					check(sw) {
+						switch (sw) {
+							case "iphone":
+
+								this.navsrcs = this.imgsrcs.nav_iphone
+
+								break
+							case "Computer":
+								this.navsrcs = this.imgsrcs.nav_computer
+								break
+							case "flat":
+								this.navsrcs = this.imgsrcs.nav_flat
+								break
+							case "router":
+								this.navsrcs = this.imgsrcs.nav_router
+								break
+							case "household":
+								this.navsrcs = this.imgsrcs.nav_household
+								break
+							case "earphone":
+								this.navsrcs = this.imgsrcs.nav_earphone
+								break
+						}
+					},
+					yiru(sw) {
+						this.check(sw)
+						const dh = document.querySelector(".header-nav-menu")
+						dh.style.display = "block"
+						dh.style.height = 0;
+						dh.offsetHeight;
+						dh.style.height = 229 + 'px'
+					},
+					yichu() {
+						event.stopPropagation();
+						const dh = document.querySelector(".header-nav-menu")
+
+						dh.style.height = 0 + 'px'
+
+						dh.style.display = "none"
+					},
+					handleScroll() {
+						const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+						if (scrollTop > 500) {
+							this.showscroll = true
+						} else {
+							this.showscroll = false
+						}
+					}
+				},
+				mounted() {
+					window.addEventListener('scroll', this.handleScroll);
+				},
+				beforeDestroy() {
+					window.removeEventListener('scroll', this.handleScroll);
+				},
+
+
+
+			};
+			Vue.createApp(App).mount('#app');
+		</script>
+	</body>
+</html>

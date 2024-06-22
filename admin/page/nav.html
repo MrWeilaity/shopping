@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>layui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../lib/layui-v2.6.3/css/layui.css" media="all">
+    <link rel="stylesheet" href="../css/public.css" media="all">
+    <link rel="stylesheet" href="../../shopping/">
+    <style>
+        .layui-table-cell {
+            height: auto;
+            line-height: 30px;
+        }
+
+        /*设置数据表表头字体*/
+        .layui-table th,
+        .layui-table td {
+            /*表头内容居中显示*/
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layuimini-container">
+        <h1 style="text-align: center;" id="productname">商品管理</h1>
+        <div class="layuimini-main">
+
+            <script type="text/html" id="toolbarDemo">
+        </script>
+
+            <table class="layui-hide" id="currentTableId" lay-filter="currentTableFilter"></table>
+
+            <script type="text/html" id="currentTableBar">
+            <a class="layui-btn layui-btn-normal layui-btn-xs data-count-edit" lay-event="edit">编辑</a>
+ 
+        </script>
+
+        </div>
+    </div>
+    <script src="../lib/layui-v2.6.3/layui.js" charset="utf-8"></script>
+    <script>
+        const class_tables = {
+            "iphone": "手机",
+            "computer": "电脑",
+            "flat": "平板",
+            "router": "路由器",
+            "household": "家电",
+            "earphone": "耳机"
+        };
+        function getQueryParams() {//解析浏览器url字符串
+            let search = window.location.search;
+            var params = {};
+            var pairs = search.slice(1).split('&');
+            for (var i = 0; i < pairs.length; i++) {
+                var pair = pairs[i].split('=');
+                params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+            }
+            return params;
+        }
+        document.getElementById("productname").innerText = class_tables[getQueryParams().nav] + "预览图管理"
+        layui.use(['form', 'table'], function () {
+            var $ = layui.jquery,
+                form = layui.form,
+                table = layui.table;
+            console.log(getQueryParams().refig)
+            table.render({
+                elem: '#currentTableId',
+                // url: '../api/table.json',
+                url: 'http://127.0.0.1:3000/api/product/showclass?nav=' + getQueryParams().nav,
+                toolbar: '#toolbarDemo',
+                defaultToolbar: ['filter', 'exports', 'print', {
+                    title: '提示',
+                    layEvent: 'LAYTABLE_TIPS',
+                    icon: 'layui-icon-tips'
+                }],
+                cols: [[
+                    // { type: "checkbox", width: 50 },
+                    { field: 'id', width: 80, title: 'ID', sort: true },
+                    { field: 'text', width: 300, title: '型号' },
+                   
+                    { field: 'Price', width: 100, title: '价格' },
+                    {
+                        field: 'src', title: '路径', minWidth: 250,
+                        templet: function (res) {
+                            return '<img src="../../shopping/' + res.src + '" style="height: 100px;width: 100px;"> </img>'
+                        }
+                    },
+                    { title: '操作', minWidth: 150, toolbar: '#currentTableBar', align: "center" }
+                ]],
+                limits: [5, 10, 15, 20, 25, 50, 100],
+                limit: 5,
+                page: false,
+                skin: 'line'
+            });
+
+            /**
+             * toolbar监听事件
+             */
+         
+
+            //监听表格复选框选择
+            table.on('checkbox(currentTableFilter)', function (obj) {
+                console.log(obj)
+            });
+
+            table.on('tool(currentTableFilter)', function (obj) {
+                var data = obj.data;
+                console.log(obj.data)
+                console.log(obj.event)
+                if (obj.event === 'edit') {
+                    sessionStorage.setItem('navdata', JSON.stringify(data));
+                    var index = layer.open({
+                        title: class_tables[getQueryParams().nav]+'预览图编辑',
+                        type: 2,
+                        shade: 0.2,
+                        maxmin: true,
+                        shadeClose: true,
+                        area: ['100%', '100%'],
+                        content: '../page/table/edit_nav.html?refig='+getQueryParams().nav,
+                    });
+                    $(window).on("resize", function () {
+                        layer.full(index);
+                    });
+                    return false;
+                } else if (obj.event === 'delete') {
+                    layer.confirm('真的删除行么', function (index) {
+                        obj.del();
+                        layer.close(index);
+                    });
+                }
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
